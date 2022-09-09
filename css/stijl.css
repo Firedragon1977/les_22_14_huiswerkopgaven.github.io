@@ -1,0 +1,52 @@
+@charset "utf-8";
+body{
+	/* Het overzicht van de website moet aan de onderkant van navigatiebalk getoond worden. */
+	margin-top: 60px;
+	background-color: rgba(255,255,0,0.25);}
+footer{
+	margin-top: 25px;
+	height: 200px;}
+.foto{
+	margin: 0px auto;
+	display: block;
+	width: 95%;
+	margin-top: 10px;
+	margin-bottom: 25px;
+	padding: 5px;
+	background-color: white;
+	border: 1px solid black;
+	border-radius: 1em;
+	box-shadow: 5px 5px 5px gray;
+	transform: rotate(5deg);}
+.zelfportret{
+	width: 200px;
+	padding: 5px;
+	background-color: white;
+	border: 1px solid black;
+	border-radius: 50%;
+	/*-- Shape-Outside wordt als fout aangemerkt door W3C-Validator aangezien deze functie nog niet universeel toepasbaar is. Het werkt wel bij Microsoft Edge en Google Chrome. En anders wordt de foto als standaard getoond. Dit werkt als een truukje. --*/
+	shape-outside: inset(1% round 50%);
+	margin-right: 25px;
+	box-shadow: 5px 5px 5px gray;}
+.zelfportret-nb{
+	height: 35px;
+	border-radius: 1em;
+	position: absolute;}
+/* De titel in navigationbalk centreren. */
+.navbar-brand{
+	margin: auto;}
+/* De button vanaf de rechterkant "zwevend" voor de navigatiebalk tonen. Op deze manier wordt de titel niet verstoord in centreren. */
+.navbar-toggler{
+	position: absolute;
+	right: 8px;}
+.tekst{margin: 75px 0px 25px 0px;}
+.list-group, table {
+	border-radius: 1em;
+	overflow: hidden;
+	box-shadow: 5px 5px 5px gray}
+/* De inhoud van bestand "contact.html" is klein en daardoor gaat de footer naar boven wat niet siert. */
+.footer{
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+	height: 200px;}
